@@ -13,13 +13,14 @@ public class Robot {
     
     public void executeTask()
     {
-        System.out.println(task);
+       
 
         if (batterielow())
         {
             System.out.println("please recharge");
         }
         else {
+        	System.out.println(task);
             batterystatus--;
         }
     }
