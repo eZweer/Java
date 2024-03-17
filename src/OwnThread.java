@@ -1,2 +1,26 @@
-package PACKAGE_NAME;public class OwnThread {
+public class OwnThread extends  Thread{
+    String name;
+
+    public OwnThread(String name)
+    {
+        this.name = name;
+    }
+    public void run(int number)
+    {
+        boolean isPrime = true;
+        for (int i = 3; i <= (int)Math.sqrt(number); i = i +2 )
+        {
+            if (number % i == 0)
+            {
+                isPrime = false;
+                break;
+            }
+
+        }
+        if (isPrime)
+        {
+            System.out.println(name + ": " +number);
+        }
+    }
+
 }

@@ -50,7 +50,7 @@ public class Main {
                         break;
 */
                     case 999:
-
+                        own.start();
                         break;
                     default:
                         System.out.println("selection not available");
