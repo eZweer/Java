@@ -1,3 +1,4 @@
+
 public class OwnThread extends  Thread{
     String name;
 
@@ -5,8 +6,11 @@ public class OwnThread extends  Thread{
     {
         this.name = name;
     }
+
+
     public void run(int number)
     {
+        /// test if the number is a prime number and output it
         boolean isPrime = true;
         for (int i = 3; i <= (int)Math.sqrt(number); i = i +2 )
         {

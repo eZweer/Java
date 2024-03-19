@@ -16,10 +16,8 @@ public class Main {
                 System.out.println("0: END");
                 System.out.println("1: W1 D1");
                 System.out.println("2: W1 D2");
-                System.out.println("3: W2 D3");
-                /*System.out.println("4: ");
-                System.out.println("5: ");
-                System.out.println("6: ");*/
+                System.out.println("3: W1 D3");
+                System.out.println("4: W2 D2");
                 System.out.println("999: own tasks");
 
                 // select program
@@ -39,16 +37,9 @@ public class Main {
                     case 3:
                         Aufgabe3.start();
                         break;
-                 /*   case 4:
-
+                    case 4:
+                    	Aufgabe4.start();
                         break;
-                    case 5:
-
-                        break;
-                    case 6:
-
-                        break;
-*/
                     case 999:
                         own.start();
                         break;

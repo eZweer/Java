@@ -1,27 +1,31 @@
 public class own {
 
-    private static void multithread(int limit,int treads)
+    /// search for prime numbers using multiple threads
+    private static void multithreading(int limit, int numOfTreads)
     {
-        OwnThread[] thread = new OwnThread[treads];
-        for (int i = 0; i < treads; i++)
+        OwnThread[] thread = new OwnThread[numOfTreads];
+
+        /// create x treads
+        for (int i = 0; i < numOfTreads; i++)
         {
             thread[i] = new OwnThread("Tread"+(i+1));
         }
-        for(int i = 1; i <= limit-(treads*2); i+= (treads *2))
+        /// splitting the numbers across all threads
+        for(int i = 1; i <= limit-(numOfTreads*2); i+= (numOfTreads *2))
         {
-            for (int j = 0; j < treads; j++)
+
+            for (int j = 0; j < numOfTreads; j++)
             {
                 thread[j].run(i + (j*2));
             }
         }
-        try{
-            for (int i = 0; i < treads; i++)
-            {
-                thread[i].join();
-            }
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+
+    }
+
+
+    private static void createNewCustomer(){
+        DbConnector db = new DbConnector();
+        
 
     }
     public static void start() {
@@ -46,9 +50,11 @@ public class own {
                     limit = Main.input.nextInt();
                     System.out.println("How many threads should be used?");
                     treads = Main.input.nextInt();
-                    multithread(limit,treads);
+                    multithreading(limit,treads);
                     break;
-
+                case 2 :
+                    createNewCustomer();
+                    break;
 
                 default: System.out.println("selection not available");break;
 
