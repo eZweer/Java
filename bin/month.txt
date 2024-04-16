@@ -1,0 +1,13 @@
+Januar,January,Enero,Janvier,январь,Yī yuè
+Februar,February,Febrero,Février,февраль,Èr yuè
+März,March,Marzo,Mars,Маршировать,sān yuè
+April,April,Abril,Avril,апрель,Sì yuè
+Mai,May,mayo,Mai,май,wǔ yuè
+Juni,June,junio,Juin,июнь,liù yuè
+Juli,July,julio,Juillet,июль,qī yuè
+August,August,agosto,Août,август,bā yuè
+September,September,septiembre,Septembre,сентябрь,jiǔ yuè
+Oktober,October,octubre,Octobre,октябрь,shí yuè
+November,November,noviembre,Novembre,ноябрь,shí yí yuè
+Dezember,December,diciembre,Décembre,декабрь,shí èr yuè
+
